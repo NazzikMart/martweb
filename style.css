@@ -1,0 +1,451 @@
+.navsBars {
+    background-color: rgb(61, 61, 61);
+    padding-bottom: 20px;
+}
+
+
+.dropdown-menu,
+.dropdown-item,
+.dropdown-divider {
+    color: white;
+    background-color: white;
+    font-size: 20px;
+}
+
+.navLogo {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    /* padding-top: 30px; */
+    transition: 0.5s all;
+}
+
+.navLogo:hover {
+    color: rgb(241, 117, 117);
+    transition: 0.5s all;
+}
+
+.nav-link {
+    font-size: 20px;
+    /* padding-top: 30px; */
+}
+
+.blur {
+    width: 100%;
+    background-color: black;
+    height: 523px;
+    position: relative;
+    margin-top: -522.5px;
+    opacity: 0.6;
+}
+
+.card-img {
+    height: 690px;
+
+}
+
+
+
+.buttons {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.textFoto {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.card-img-overlay {
+    text-align: center;
+    padding-top: 350px;
+}
+
+.btnZakaz {
+    font-size: 25px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.information {
+    text-align: center;
+    padding: 30px;
+    padding-top: 90px;
+}
+
+.textInfo {
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.infos {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.display {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.cardOne {
+    padding: 10px;
+}
+
+.card {
+    border: none;
+}
+
+.img-thumbnail {
+    border: none;
+
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.textFoto {
+    color: white;
+}
+
+.cardsBtn {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.btnZakaz {
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.cardF {
+    height: 800px;
+}
+
+.cardsImg {
+    height: 800px;
+}
+
+.btnZakaz:hover {
+    background-color: rgb(250, 112, 112);
+    transition: 0.5s all;
+    padding: 12px;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    height: 400px;
+    /* margin-top: 200px; */
+}
+
+.blockGray {
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    max-height: 800px;
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.images {
+    width: 200px;
+    height: 200px;
+}
+
+
+.medias {
+    text-align: right;
+}
+
+.carts {
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.bi {
+    color: white;
+}
+
+.rek {
+    font-size: 55px;
+    font-weight: 900;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.d-block {
+    height: 500px;
+    text-align: center;
+}
+
+.active {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.rek {}
+
+.carts:hover {
+    background-color: rgb(224, 72, 72);
+    padding: 25px;
+    transition: 0.5s;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.imgCardOne {
+    width: 200px;
+    height: 350px;
+}
+
+.infoCardOne {
+    display: flex;
+}
+
+.works {}
+
+.work {
+    font-size: 55px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.zajet {
+    width: 100px;
+    height: 100px;
+    margin-top: 9px;
+}
+
+.paddCard {
+    transition: 0.5s all;
+}
+
+.paddCard:hover {
+    padding: 10px;
+    transition: 0.5s all;
+}
+
+.formReg {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 60px;
+}
+
+form {
+    background-color: rgb(61, 61, 61);
+}
+
+.formText {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 90px;
+}
+
+.fText {
+    font-size: 55px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+
+.formREgdiv {
+    width: 100%;
+    background-color: rgb(179, 179, 179);
+    padding-bottom: 140px;
+}
+
+.footer {
+    position: absolute;
+}
+
+.formReg {
+    padding: 20px;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.link {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 30px;
+}
+
+.formREgdiv {
+    background-image: url(img/0f3e47d3e4d1269ade8e4c3550eac208--internet-of-things-the-internet.jpg);
+}
+
+.information {
+    background-image: url();
+}
+
+.blockGray {}
+
+/* .fotos{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+}
+
+.titles{
+    color: red;
+} */
+
+.font-weight-medium {
+    color: white;
+}
+
+
+.colors {
+    color: white;
+}
+
+.bg {
+    background-color: rgb(61, 61, 61);
+}
+
+.colors1 {
+    color: black;
+}
+
+.needs-validation {
+    position: relative;
+    top: 200px;
+    padding: 50px;
+    color: white;
+    margin-bottom: 300px;
+    font-size: 25px;
+    min-height: 700px;
+}
+
+.zamovlenja {
+    position: relative;
+    top: 180px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    font-weight: 500;
+
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.form-control {
+    padding: 25px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.about {
+    position: relative;
+    margin: 50px;
+}

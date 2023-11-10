@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cart-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      .cart-items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .cart-items li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .cart-items li:last-child {
+        border-bottom: none;
+      }
+
+      .cart-items img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .cart-total {
+        margin-top: 20px;
+      }
+
+      .clear-cart {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .menu-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      .menu-items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .menu-items li {
+        width: calc(33.33% - 10px);
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .menu-items img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .add-to-cart {
+        display: block;
+        margin: 10px auto 0;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .menu-container {
+        position: relative;
+        margin-top: 180px;
+      }
+      .cart-containers {
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+      }
+
+      .contain {
+        position: relative;
+        top: -180px;
+      }
+      .checkout-btn {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        background-color: #15aa51;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <nav class="navbar navbar-expand-lg navsBars navbar-dark">
+        <a class="navbar-brand navLogo" href="../index.html">@MartWEB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">
+                Головна
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.ejs">Замовити роботу</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Інформація
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item colors1" href="../about.html">
+                  Контакти
+                </a>
+                <!-- <a class="dropdown-item colors1" href="#">Про нас</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item colors1" href="#">Документи</a> -->
+              </div>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="menu-container">
+      <h2>Меню</h2>
+      <ul class="menu-items row">
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img src="../img/MS-Word-logotip.png" alt="Піца" />
+          <h3>Виконання домашнього завдання по Word</h3>
+          <p>Ціна: 150 грн.</p>
+          <button class="add-to-cart" data-id="1">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img
+            src="../img/Microsoft_Office_Excel_(2019–present).svg.png"
+            alt="Гамбургер"
+          />
+          <h3>Виконання домашнього завдання по Excel</h3>
+          <p>Ціна: 150 грн.</p>
+          <button class="add-to-cart" data-id="2">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img
+            src="../img/Microsoft_Office_Access_(2019-present).svg.png"
+            alt="Салат"
+          />
+          <h3>Виконання домашнього завдання по Access</h3>
+          <p>Ціна: 100 грн.</p>
+          <button class="add-to-cart" data-id="3">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img
+            src="../img/Microsoft_Office_PowerPoint_(2019–present).svg.png"
+            alt="Паніні"
+          />
+          <h3>Виконання домашнього завдання в PowerPoint</h3>
+          <p>Ціна: 80 грн.</p>
+          <button class="add-to-cart" data-id="3">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img src="../img/image-html.png" alt="Паніні" />
+          <h3>Верстка сайтів</h3>
+          <p>Ціна: 500 грн.</p>
+          <button class="add-to-cart" data-id="3">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img src="../img/offer2-m.jpg" alt="Паніні" />
+          <h3>Обробка фото</h3>
+          <p>Ціна: 100 грн.</p>
+          <button class="add-to-cart" data-id="3">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img src="../img/unnamed1111.png" alt="Паніні" />
+          <h3>Робота в AutoCad</h3>
+          <p>Ціна: 200 грн.</p>
+          <button class="add-to-cart" data-id="3">Додати в кошик</button>
+        </li>
+        <li class="col-12 col-sm-12 col-md-4 col-xs-6 col-lg-3 col-xs-3">
+          <img
+            src="../img/1616587100_6-p-programmirovanie-fon-7.jpg"
+            alt="Паніні"
+          />
+          <h3>Інші роботи</h3>
+          <p>Ціна: 100 грн.</p>
+          <button class="add-to-cart" data-id="3">Додати в кошик</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cart-containers">
+      <h2>Кошик</h2>
+      <ul class="cart-items">
+        <!-- тут будуть розміщені товари, які додані у корзину -->
+      </ul>
+      <div class="cart-total">
+        <h3>
+          Загальна сума:
+          <span class="total-amount">0</span>
+          грн.
+        </h3>
+      </div>
+      <button class="clear-cart">Очистити кошик</button>
+      <button class="checkout-btn">Оформити замовлення</button>
+    </div>
+
+    <!-- form  -->
+    <div class="container-fluid bg pt-5 px-sm-3 px-md-5 colors">
+      <div class="row py-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+            Про нас
+          </h5>
+          <p class="font-weight-medium">
+            <i class="fa fa-map-marker-alt mr-2"></i>
+            Без адреси
+          </p>
+          <p class="font-weight-medium">
+            <i class="fa fa-phone-alt mr-2"></i>
+            +38097000000
+          </p>
+          <p class="font-weight-medium">
+            <i class="fa fa-envelope mr-2"></i>
+            martweb@gmail.com
+          </p>
+          <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold"></h6>
+          <div class="d-flex justify-content-start">
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+            Новини
+          </h5>
+          <div class="mb-3">
+            <div class="mb-2">
+              <a
+                class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 colors"
+                href=""
+              >
+                Що нового?
+              </a>
+              <a class="colors" href=""><small>Грудня 15, 2022</small></a>
+            </div>
+            <a class="small text-uppercase font-weight-medium colors" href="">
+              В найблищий час можна буде замовити роботу по React Js
+            </a>
+          </div>
+          <div class="mb-3">
+            <div class="mb-2">
+              <a
+                class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 colors"
+                href=""
+              >
+                Що нового?
+              </a>
+              <a class="colors" href=""><small>Грудня 15, 2022</small></a>
+            </div>
+            <a class="small text-uppercase font-weight-medium colors" href="">
+              В найблищий час можна буде замовити роботу по Vue Js
+            </a>
+          </div>
+          <div class="">
+            <div class="mb-2">
+              <a
+                class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 colors"
+                href=""
+              >
+                Що нового?
+              </a>
+              <a class="colors" href=""><small>Грудня 15, 2022</small></a>
+            </div>
+            <a class="small text-uppercase font-weight-medium colors" href="">
+              В найблищий час можна буде замовити роботу по Angular
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+            Категорії
+          </h5>
+          <div class="m-n1">
+            <a href="" class="btn btn-sm btn-secondary m-1">ІТ</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Програмування</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">
+              Веб-програмування
+            </a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Бізнес</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Word</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Excel</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Access</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Реферати</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Курсові</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Дипломні</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Бази даних</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Таблиці</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Функції</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Задачі</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Верстка сайтів</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Кодинг</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Фотообробка</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Відеообробка</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Призентації</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Написання постів</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Статі</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">Фото</h5>
+          <div class="row">
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5 bg">
+      <p class="m-0 text-center">
+        &copy;
+        <a href="work.ejs">Замовити роботу</a>
+
+        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+        <!-- <a href="https://htmlcodex.com">Html код</a></p> -->
+      </p>
+    </div>
+
+    <script>
+      const menuItems = document.querySelector('.menu-items')
+      const addToCartBtns = document.querySelectorAll('.add-to-cart')
+
+      // додати товар у кошик
+      function addToCart(item) {
+        cart.push(item)
+      }
+
+      // встановити обробник подій для кнопок додавання товару
+      addToCartBtns.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          const id = parseInt(e.target.dataset.id)
+          const item = {
+            id: id,
+            name: e.target.parentNode.querySelector('h3').textContent,
+            image: e.target.parentNode.querySelector('img').src,
+            price: parseInt(
+              e.target.parentNode.querySelector('p').textContent.split(' ')[1],
+            ),
+          }
+          addToCart(item)
+        })
+      })
+
+      const cartItems = document.querySelector('.cart-items')
+      const totalAmount = document.querySelector('.total-amount')
+      const clearCartBtn = document.querySelector('.clear-cart')
+
+      let cart = [] // масив для збереження товарів у кошику
+
+      // додати товар у кошик
+      function addToCart(item) {
+        cart.push(item)
+        renderCart()
+      }
+
+      // відобразити товари у кошику
+      function renderCart() {
+        cartItems.innerHTML = ''
+        let total = 0
+        cart.forEach((item) => {
+          const li = document.createElement('li')
+          li.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <span>${item.name}</span>
+      <span>${item.price} грн.</span>
+      <button class="remove-item" data-id="${item.id}">Видалити</button>
+    `
+          cartItems.appendChild(li)
+          total += item.price
+        })
+        totalAmount.textContent = total
+      }
+
+      // видалити товар з кошика
+      function removeFromCart(id) {
+        cart = cart.filter((item) => item.id !== id)
+        renderCart()
+      }
+
+      // очистити кошик
+      function clearCart() {
+        cart = []
+        renderCart()
+      }
+
+      // встановити обробник подій для кнопок видалення товарів
+      cartItems.addEventListener('click', (e) => {
+        if (e.target.classList.contains('remove-item')) {
+          const id = parseInt(e.target.dataset.id)
+          removeFromCart(id)
+        }
+      })
+      // встановити обробник подій для кнопки очищення кошика
+      clearCartBtn.addEventListener('click', () => {
+        clearCart()
+      })
+
+      function removeFromCart(id) {
+        const index = cart.findIndex((item) => item.id === id) // знаходимо індекс товару з id, який потрібно видалити
+        if (index !== -1) {
+          cart.splice(index, 1) // видаляємо товар з кошика
+          renderCart() // перерендерюємо кошик
+        }
+      }
+    </script>
+
+    <script src="../script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

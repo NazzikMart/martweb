@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .bi {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        margin: 30px;
+        background-color: black;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      .bi-facebook:hover {
+        background-color: blue;
+      }
+      .bi-telegram:hover {
+        background-color: rgb(23, 137, 203);
+      }
+      .bi-instagram:hover {
+        background-color: rgb(222, 44, 210);
+      }
+      .colors1 {
+        font-weight: 700;
+        color: red;
+      }
+
+      /* .socialMenu {
+        display: flex;
+        flex-direction: column;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <nav class="navbar navbar-expand-lg navsBars navbar-dark">
+        <a class="navbar-brand navLogo" href="index.html">@MartWEB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                Головна
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work/work.html">Замовити роботу</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Інформація
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item colors1" href="about.html">Контакти</a>
+              </div>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+      <div class="row" style="display: flex; flex-direction: row;">
+        <div class="">
+          <h1 class="colors1" style="text-transform: uppercase;">Контакти</h1>
+          <p
+            style="
+              font-size: 25px;
+              text-align: left;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            "
+          >
+            Зв'яжіться з нами за допомогою наступних контактів:
+          </p>
+          <ul>
+            <li
+              style="
+                font-size: 25px;
+                text-align: left;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                  sans-serif;
+              "
+            >
+              Електронна пошта:
+              <a href="mailto:nazzikmart@gmail.com">martweb@gmail.con</a>
+            </li>
+            <li
+              style="
+                font-size: 25px;
+                text-align: left;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                  sans-serif;
+              "
+            >
+              Телефон:
+              <a href="tel:+380974613997">+09800000000000</a>
+            </li>
+            <li
+              style="
+                font-size: 25px;
+                text-align: left;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                  sans-serif;
+              "
+            >
+              Львів
+            </li>
+          </ul>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.49626475683!2d23.929834959173302!3d49.83277057356916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1699622067238!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="socialMenu">
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </a>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-telegram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+            />
+          </svg>
+        </a>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container-fluid bg pt-5 px-sm-3 px-md-5 colors">
+      <div class="row py-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+            Про нас
+          </h5>
+          <p class="font-weight-medium">
+            <i class="fa fa-map-marker-alt mr-2"></i>
+            Без адреси
+          </p>
+          <p class="font-weight-medium">
+            <i class="fa fa-phone-alt mr-2"></i>
+            +380970000000000
+          </p>
+          <p class="font-weight-medium">
+            <i class="fa fa-envelope mr-2"></i>
+            martweb@gmail.com
+          </p>
+          <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold"></h6>
+          <div class="d-flex justify-content-start">
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn btn-lg btn-secondary btn-lg-square" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+            Новини
+          </h5>
+          <div class="mb-3">
+            <div class="mb-2">
+              <a
+                class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 colors"
+                href=""
+              >
+                Що нового?
+              </a>
+              <a class="colors" href=""><small>Грудня 15, 2022</small></a>
+            </div>
+            <a class="small text-uppercase font-weight-medium colors" href="">
+              В найблищий час можна буде замовити роботу по React Js
+            </a>
+          </div>
+          <div class="mb-3">
+            <div class="mb-2">
+              <a
+                class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 colors"
+                href=""
+              >
+                Що нового?
+              </a>
+              <a class="colors" href=""><small>Грудня 15, 2022</small></a>
+            </div>
+            <a class="small text-uppercase font-weight-medium colors" href="">
+              В найблищий час можна буде замовити роботу по Vue Js
+            </a>
+          </div>
+          <div class="">
+            <div class="mb-2">
+              <a
+                class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 colors"
+                href=""
+              >
+                Що нового?
+              </a>
+              <a class="colors" href=""><small>Грудня 15, 2022</small></a>
+            </div>
+            <a class="small text-uppercase font-weight-medium colors" href="">
+              В найблищий час можна буде замовити роботу по Angular
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+            Категорії
+          </h5>
+          <div class="m-n1">
+            <a href="" class="btn btn-sm btn-secondary m-1">ІТ</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Програмування</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">
+              Веб-програмування
+            </a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Бізнес</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Word</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Excel</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Access</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Реферати</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Курсові</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Дипломні</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Бази даних</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Таблиці</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Функції</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Задачі</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Верстка сайтів</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Кодинг</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Фотообробка</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Відеообробка</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Призентації</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Написання постів</a>
+            <a href="" class="btn btn-sm btn-secondary m-1">Статі</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold">Фото</h5>
+          <div class="row">
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="">
+                <img class="w-100" src="img/news-110x110-1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5 bg">
+      <p class="m-0 text-center">
+        &copy;
+        <a href="./work/work.ejs">Замовити роботу</a>
+
+        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+        <!-- <a href="https://htmlcodex.com">Html код</a></p> -->
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
